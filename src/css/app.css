@@ -1,0 +1,107 @@
+.saa {
+    /* じわっと画像が表示される */
+    text-decoration:none;    
+ 	animation: fadeIn 3s ease 0s 1 normal;
+    -webkit-animation: fadeIn 3s ease-in-out 0s 1 normal;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    color: #ffffff;
+    background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #5e7fca;
+}
+
+.next {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    color: #eeeeee;
+    background-image: linear-gradient(#ffff65 0%, #ffffc1 100%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #ffffc1;
+    margin-bottom: 3%;
+    margin-right: 2%;
+    border-bottom: solid 3px #5e7fca
+}
+
+.tojiru {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    color: #5e7fca;
+    background-image: linear-gradient(#ffff65 0%, #ffffc1 100%);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+    border-bottom: solid 3px #ffffc1;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    border-bottom: solid 3px #5e7fca
+}
+ 
+ 
+@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
+    0% {opacity: 0} /* 始め */
+    100% {opacity: 1} /* 終わり */
+}
+
+  
+.saa:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+.next:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+.tojiru:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, .app {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0,0,0, 0.5);
+}
+
+.popup_inner {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 25%;
+    bottom: 25%;
+    background: #ffffbc;
+}
